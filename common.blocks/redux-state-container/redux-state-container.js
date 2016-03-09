@@ -9,7 +9,7 @@ modules.define('redux-state-container', ['i-bem__dom', 'redux'], function(provid
  * @abstract
  * @bem
  */
-provide(BEMDOM.decl(this.name, /** @lends control.prototype */{
+provide(BEMDOM.decl(this.name, /** @lends redux-state-container.prototype */{
     onSetMod: {
         js: {
             inited: function() {
@@ -19,7 +19,7 @@ provide(BEMDOM.decl(this.name, /** @lends control.prototype */{
                  * @public
                  * @type {Object}
                  */
-                this.store = createStore(this.rootReducer, initialState);
+                this.store = Redux.createStore(this.rootReducer, initialState);
             }
         }
     },
