@@ -9,12 +9,16 @@ Declare (override) you own `getInitialState` and `rootReducer` methods ([more ab
 
 Use [redux store api](http://redux.js.org/docs/basics/Store.html) to interact with your store:
 ```javascript
+// Dispatch some actions
+this.store.dispatch
+
 // Subscribe to the state changes
 this.store.subscribe
 
 // Get current state
 this.store.getState
-
-// Dispatch some actions
-this.store.dispatch
 ```
+
+## View example
+
+[Todo example for bem-redux](https://github.com/rakchaev/bem-redux-todo-example).
