@@ -3,7 +3,7 @@ Redux for BEM projects
 
 ## How to use
 
-Inherit your block should be state container from `redux-state-container` using `base-block` construction.
+Inherit your block that should be state container from `redux-state-container` using `base-block` construction.
 
 Declare (override) you own `getInitialState` and `rootReducer` methods ([more about reducers](http://redux.js.org/docs/basics/Reducers.html)).
 

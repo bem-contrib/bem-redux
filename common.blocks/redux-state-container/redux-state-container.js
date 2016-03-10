@@ -14,12 +14,15 @@ provide(BEMDOM.decl(this.name, /** @lends redux-state-container.prototype */{
         js: {
             inited: function() {
                 var initialState = this.getInitialState();
+                // Save context for rootReducer
+                var reducer = (state, action) => this.rootReducer(state, action);
+
                 /**
                  * Store of Redux State Container
                  * @public
                  * @type {Object}
                  */
-                this.store = Redux.createStore(this.rootReducer, initialState);
+                this.store = Redux.createStore(reducer, initialState);
             }
         }
     },
