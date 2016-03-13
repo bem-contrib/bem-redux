@@ -3,7 +3,7 @@ Redux for BEM projects
 
 ## How to use
 
-You have 2 main options to use it.
+You have 2 ways to use it.
 * Connect your store with block-container that contains your dynamic logic.
 * Create store as singleton without connection with BEM block.
 
