@@ -28,7 +28,9 @@ this.store.getState
 ### Store as singleton
 
 You can use `Redux` as you want.
+
 Just add `redux` in your module dependencies and go ahead.
+
 For example, you can define module that provides your store with your logic as singleton.
 
 ```javascript
