@@ -1,9 +1,6 @@
 {
   "name": "bem-redux",
   "version": "0.0.1",
-  "dependencies": {
-    "bem-core": "bem-core#2.8.0"
-  },
   "ignore": [
     "node_modules",
     "libs"
