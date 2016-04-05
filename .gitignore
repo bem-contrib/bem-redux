@@ -1,2 +1,6 @@
-node_modules
+.enb/tmp
+.idea
+
+common.specs
 libs
+node_modules
