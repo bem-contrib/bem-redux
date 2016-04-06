@@ -59,7 +59,7 @@ provide(BEMDOM.decl(this.name, /** @lends redux-state-container.prototype */{
      */
     onStoreChanged: function(filter, callback) {
         var _this = this;
-        this.store.subscribe(function() {
+        _this.store.subscribe(function() {
             var state = _this.store.getState();
             if (!filter || _this._isMatch(state, filter)) {
                 return callback(_.clone(state));
@@ -84,8 +84,6 @@ provide(BEMDOM.decl(this.name, /** @lends redux-state-container.prototype */{
         };
 
         var getMatchData = function(object) {
-            console.log('AAAAA');
-            console.log(_.VERSION);
             var result = _.pairs(object);
             var length = result.length;
 
