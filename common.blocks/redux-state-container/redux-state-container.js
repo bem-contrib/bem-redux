@@ -15,7 +15,9 @@ provide(BEMDOM.decl(this.name, /** @lends redux-state-container.prototype */{
             inited: function() {
                 var initialState = this.getInitialState();
                 // Save context for rootReducer
-                var reducer = (state, action) => this.rootReducer(state, action);
+                var reducer = function (state, action) {
+                    return this.rootReducer(state, action)
+                }.bind(this);
 
                 /**
                  * Store of Redux State Container
