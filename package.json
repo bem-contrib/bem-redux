@@ -1,6 +1,6 @@
 {
   "name": "bem-redux",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "devDependencies": {
     "browserify": "^13.0.0",
     "redux": "^3.3.1"
